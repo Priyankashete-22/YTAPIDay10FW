@@ -12,7 +12,8 @@ def test_get_users(api_client):
     print(response.json())
     assert response.status_code == 200
     assert len(response.json()) > 0
-
+#Hi
+#Hello
 
 '''def test_create_users(api_client):
     user_data = {
