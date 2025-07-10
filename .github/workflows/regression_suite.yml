@@ -11,6 +11,9 @@ on :
 jobs :
   run-tests :
     runs-on : ubuntu-latest
+
+schedule :
+  - cron : '302***'
     
 steps : 
   - name : checkout code
