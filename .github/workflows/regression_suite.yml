@@ -17,12 +17,12 @@ schedule :
     
 steps : 
   - name : checkout code
-    uses : actions/checkout@v2
+    uses : actions/checkout@v3
 
   - name : Set up python
-    uses : actions/setup-python@v2
+    uses : actions/setup-python@v3
     with :
-      Python-version : '3.9'
+      Python-version : '3.9.20'
 
   - name : Install dependencies
     run : | 
@@ -34,7 +34,7 @@ steps :
       pytest -s --html = report.html -self-contained-html
 
   - name : Upload report
-    uses : actions/upload - artifact@v2
+    uses : actions/upload - artifact@v3
     with : 
       name : pytest-report
       Path : report.html
